@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "574709334642",
+    "firebase_url": "https://myarchivesapp-default-rtdb.firebaseio.com",
+    "project_id": "myarchivesapp",
+    "storage_bucket": "myarchivesapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:574709334642:android:2f98ea8bc4625ca40978eb",
+        "android_client_info": {
+          "package_name": "com.nicolejade.myarchivesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "574709334642-n90itmo0ui6l21abhpoopgl1e32346bg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-mQQ8anXVUzU9AnpwOC28FbrMeAqdECI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "574709334642-n90itmo0ui6l21abhpoopgl1e32346bg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

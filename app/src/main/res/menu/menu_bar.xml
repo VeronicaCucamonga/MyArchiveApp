@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home_nav"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/profile_nav"
+        android:icon="@drawable/ic_profile"
+        android:iconTint="@color/black"
+        android:title="Profile"/>
+
+    <item
+        android:id="@+id/progress_nav"
+        android:icon="@drawable/ic_chart"
+        android:iconTint="@color/black"
+        android:title="Progress"/>
+
+    <item
+        android:id="@+id/other_nav"
+        android:icon="@drawable/ic_controller"
+        android:iconTint="@color/black"
+        android:title=":P"/>
+</menu>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6EAFF"
+    tools:context=".ViewItems">
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/toolbar">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:src="@drawable/ic_arrow_back" />
+
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Items"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sub_titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTv"
+            android:layout_centerHorizontal="true"
+            android:text="Category"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/search_bar_vi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarRl"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_search"
+        android:hint="Search"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#c5c5c5" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itemsRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_bar_vi"
+        android:layout_above="@id/bottom_ll"
+        android:layout_margin="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/row_item_layout"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/add_item_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+ Add New Item"
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:minHeight="50dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="#5271FF"/>
+
+    </LinearLayout>
+</RelativeLayout>

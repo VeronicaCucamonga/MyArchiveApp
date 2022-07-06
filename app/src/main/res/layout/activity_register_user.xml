@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterUser"
+    android:background="#E6EAFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/banner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Hi!"
+            android:textColor="@color/black"
+            android:textSize="37sp" />
+
+        <TextView
+            android:id="@+id/banner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Create a new account"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+        <EditText
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="90dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="Full Name"
+            android:inputType="text"
+            android:textColor="#5271FF"
+            android:textColorHint="#5271FF"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="Age"
+            android:inputType="text"
+            android:textColor="#5271FF"
+            android:textColorHint="#5271FF"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="Email"
+            android:inputType="text"
+            android:textColor="#5271FF"
+            android:textColorHint="#5271FF"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#5271FF"
+            android:textColorHint="#5271FF"
+            android:textSize="15sp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/registerUser"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="100dp"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="#5271FF"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            app:strokeColor="#5271FF" />
+
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+</RelativeLayout>

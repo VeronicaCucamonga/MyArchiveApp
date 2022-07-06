@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nicolejade.myarchivesapp">
+    <!--  //**********CODE ATTRIBUTION**********-->
+    <!--  //Author: CodingWithMitch-->
+    <!--  //Title: Android Beginner Tutorial #27 - Check Permissions in Android-->
+    <!--  //Published: 25 May 2017-->
+    <!--  //URL: https://www.youtube.com/watch?v=OywtFleIXnw-->
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <!--    //**********CODE ATTRIBUTION ENDS**********-->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyArchivesApp">
+        <activity
+            android:name="com.nicolejade.myarchivesapp.ChromeGame"
+            android:exported="false" />
+        <activity
+            android:name="com.nicolejade.myarchivesapp.BarChartActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.nicolejade.myarchivesapp.ProfileEdit"
+            android:exported="false" />
+        <activity
+            android:name="com.nicolejade.myarchivesapp.ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.nicolejade.myarchivesapp.AddItems"
+            android:exported="false" />
+        <activity
+            android:name="com.nicolejade.myarchivesapp.ViewItems"
+            android:exported="false" />
+        <activity
+            android:name="com.nicolejade.myarchivesapp.AddCollections"
+            android:exported="false" />
+        <activity
+            android:name="com.nicolejade.myarchivesapp.ViewCollections"
+            android:exported="false" />
+        <activity
+            android:name="com.nicolejade.myarchivesapp.RegisterUser"
+            android:exported="false" />
+        <activity
+            android:name="com.nicolejade.myarchivesapp.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.nicolejade.myarchivesapp.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
